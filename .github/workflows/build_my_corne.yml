@@ -10,5 +10,5 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["corne_left nice_view_adapter nice_view_gem","corne_right nice_view_adapter nice_view_gem"]'
-      kconfig: '["CONFIG_ZMK_SLEEP=y\\nCONFIG_ZMK_DISPLAY=y\\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\\nCONFIG_ZMK_POINTING=y\\nCONFIG_ZMK_PM_SOFT_OFF=y\\nCONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y\\CONFIG_NICE_VIEW_GEM_ANIMATION_MS=96000"]'
+      kconfig: '["CONFIG_ZMK_SLEEP=y\\nCONFIG_ZMK_DISPLAY=y\\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y\\nCONFIG_ZMK_POINTING=y\\nCONFIG_ZMK_PM_SOFT_OFF=y\\nCONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y\\nCONFIG_NICE_VIEW_GEM_ANIMATION_MS=32000"]'
       modules: '["M165437/nice-view-gem/main"]'
