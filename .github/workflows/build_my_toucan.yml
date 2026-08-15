@@ -1,0 +1,9 @@
+name: 'Build my toucan with gem'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["xiao_ble//zmk"]'
+      shield: '["toucan_left rgbled_adapter nice_view_gem","toucan_right rgbled_adapter"]'
