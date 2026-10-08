@@ -1,4 +1,6 @@
 # Copyright 2023 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-outboard_modules="beekeeb/zmk-keyboard-toucan2/main caksoylar/zmk-rgbled-widget/main beekeeb/zmk_driver_azoteq/main beekeeb/zmk-input-zoom/main"
+# Toucan2 retains the toucan_left / toucan_right shield names.
+# The RGB LED adapter must match ZMK 0.3 (main targets newer board names).
+outboard_modules="beekeeb/zmk-keyboard-toucan2/main caksoylar/zmk-rgbled-widget/v0.3 beekeeb/zmk_driver_azoteq/main beekeeb/zmk-input-zoom/main"

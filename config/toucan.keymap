@@ -4,3 +4,15 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
+
+// Toucan2's stock keymap uses different layer numbers. Activate Miryoku's
+// mouse layer while touching the trackpad, and use Nav for pointer scrolling.
+&is_touching_processor {
+    bindings = <&mo U_MOUSE>;
+};
+
+&trackpad_listener {
+    scroller {
+        layers = <U_NAV>;
+    };
+};

@@ -1,5 +1,24 @@
-name: 'Build beekeeb Toucan'
-on: workflow_dispatch
+name: 'Build beekeeb Toucan2'
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build_beekeeb_toucan.yml'
+      - '.github/workflows/main.yml'
+      - '.github/workflows/outboards/shields/toucan'
+      - 'config/toucan.keymap'
+      - 'miryoku/**'
+  pull_request:
+    paths:
+      - '.github/workflows/build_beekeeb_toucan.yml'
+      - '.github/workflows/main.yml'
+      - '.github/workflows/outboards/shields/toucan'
+      - 'config/toucan.keymap'
+      - 'miryoku/**'
+
+permissions:
+  contents: read
+
 jobs:
   build:
     uses: ./.github/workflows/main.yml
